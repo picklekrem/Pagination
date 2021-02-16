@@ -22,7 +22,7 @@ class OpportunityViewController: UIViewController, UICollectionViewDelegate, UIC
     
     let menu : DropDown = {
         let menu  = DropDown()
-        menu.dataSource.append("all")
+        menu.dataSource.append("All")
         return menu
     }()
     
@@ -35,7 +35,7 @@ class OpportunityViewController: UIViewController, UICollectionViewDelegate, UIC
         nasaViewModel = NasaViewModel()
         menu.anchorView = filterButtonOutlet
         menu.selectionAction = {index, title in
-            if title == "all" {
+            if title == "All" {
                 self.camera = nil
             }
             else{

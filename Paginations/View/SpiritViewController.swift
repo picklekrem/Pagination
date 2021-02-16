@@ -25,7 +25,7 @@ class SpiritViewController: UIViewController,UICollectionViewDelegate,UICollecti
     
     let menu : DropDown = {
         let menu  = DropDown()
-        menu.dataSource.append("all")
+        menu.dataSource.append("All")
         return menu
     }()
     

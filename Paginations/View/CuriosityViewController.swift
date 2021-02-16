@@ -38,7 +38,7 @@ class CuriosityViewController: UIViewController, UICollectionViewDelegate, UICol
         
         menu.anchorView = filterButtonOutlet
         menu.selectionAction = {index, title in
-            if title == "all" {
+            if title == "All" {
                 self.camera = nil
             }
             else{
