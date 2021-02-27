@@ -16,7 +16,6 @@ class CuriosityViewController: UIViewController, UICollectionViewDelegate, UICol
     
     var detailsInfo : Photos = Photos()
     
-    
 
     private var path = "Curiosity"
     private var page = 1
@@ -30,10 +29,14 @@ class CuriosityViewController: UIViewController, UICollectionViewDelegate, UICol
         menu.dataSource.append("All")
         return menu
     }()
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         collectionView.delegate = self
         collectionView.dataSource = self
+        
+        
         nasaViewModel = NasaViewModel()
         
         menu.anchorView = filterButtonOutlet

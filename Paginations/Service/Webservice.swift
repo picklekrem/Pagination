@@ -13,6 +13,7 @@ class Webservice {
     func fetchData (path: String,solQuery:Int,camera:String?,pageQuery:Int, completion : @escaping (NasaPhotosApi?) -> ()){
         let apiKey = "mDWaPv6l7Vow7EiNZgNZ4dTxRAuA2rtqVBfyjjmN&"
         var url = URL(string: "")
+        
         if camera != nil {
             url = URL(string: "https://api.nasa.gov/mars-photos/api/v1/rovers/\(path)/photos?sol=\(solQuery)&camera=\(camera ?? "")&api_key=\(apiKey)&page=\(pageQuery)")!
         }else{

@@ -20,6 +20,7 @@ class DetailsViewController: UIViewController {
     
     var selectedItemModel : Photos = Photos()
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
